@@ -143,7 +143,7 @@ function generatePassword(pwLength, pwLower, pwUpper, pwNumber, pwSpecial){
     }
   }
   if (pwLower===true && pwUpper===false && pwNumber===true && pwSpecial===true){
-    var all = (lower + number + specialS);
+    var all = (lower + number + special);
     for (var i = 0; i < pwLength; i++) {
       var generated = Math.floor(Math.random() * all.length);
       finalPassword += all[generated]; 
